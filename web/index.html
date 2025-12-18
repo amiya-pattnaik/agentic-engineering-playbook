@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agentic Banking Demo</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="card" id="login-card">
+      <h1>Sign in</h1>
+      <p class="muted">Demo credentials: user@example.com / demo123</p>
+      <form id="login-form">
+        <label>Email</label>
+        <input type="email" id="email" required placeholder="you@example.com" />
+        <label>Password</label>
+        <input type="password" id="password" required placeholder="••••••••" />
+        <button type="submit">Login</button>
+      </form>
+      <div id="login-error" class="error hidden">Invalid credentials</div>
+    </div>
+
+    <div class="card hidden" id="dashboard-card">
+      <header class="dash-head">
+        <div>
+          <h1>Welcome back</h1>
+          <p class="muted">Agentic Banking demo dashboard</p>
+        </div>
+        <button id="logout-btn" class="ghost">Logout</button>
+      </header>
+      <section class="balance">
+        <div>
+          <p class="label">Account balance</p>
+          <h2 id="balance">$0</h2>
+        </div>
+        <div>
+          <p class="label">Available credit</p>
+          <h3 id="credit">$0</h3>
+        </div>
+      </section>
+      <section>
+        <p class="label">Recent transactions</p>
+        <table>
+          <thead>
+            <tr><th>Date</th><th>Description</th><th class="right">Amount</th></tr>
+          </thead>
+          <tbody id="tx-body"></tbody>
+        </table>
+      </section>
+    </div>
+  </div>
+  <script src="/main.js"></script>
+</body>
+</html>

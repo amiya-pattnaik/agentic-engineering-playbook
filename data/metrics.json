@@ -1,0 +1,44 @@
+{
+  "preMerge": {
+    "unitCoveragePct": 78,
+    "componentCoveragePct": 62,
+    "coverageTargetPct": 85,
+    "staticAnalysisFindings": 5,
+    "securityFindings": 2
+  },
+  "ciCd": {
+    "regressionPassRatePct": 92,
+    "p95LatencyMs": 420,
+    "p99LatencyMs": 870,
+    "throughputRps": 130,
+    "errorBudgetRemainingPct": 65,
+    "qualityGateStatus": "failing (coverage below target)"
+  },
+  "postRelease": {
+    "defectLeakageCount": 3,
+    "mttrMinutes": 35,
+    "mttdMinutes": 10,
+    "customerErrorRatePct": 0.8,
+    "rollbackCount": 1,
+    "sloCompliancePct": 92,
+    "onboardingScore": 7.5,
+    "runbookCompletenessPct": 80
+  },
+  "targets": {
+    "unitCoverageMinPct": 85,
+    "componentCoverageMinPct": 80,
+    "staticAnalysisMax": 2,
+    "securityFindingsMax": 0,
+    "regressionPassRateMinPct": 95,
+    "p95LatencyMaxMs": 300,
+    "p99LatencyMaxMs": 800,
+    "errorBudgetMinPct": 80,
+    "defectLeakageMax": 1,
+    "mttrMaxMinutes": 30,
+    "mttdMaxMinutes": 15,
+    "customerErrorRateMaxPct": 0.5,
+    "rollbackMax": 0,
+    "sloComplianceMinPct": 95,
+    "runbookCompletenessMinPct": 90
+  }
+}

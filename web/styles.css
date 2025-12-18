@@ -1,0 +1,26 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: "Inter", -apple-system, system-ui, sans-serif; }
+body { background: radial-gradient(circle at 20% 20%, #eef2ff, #f8fafc); min-height: 100vh; color: #111827; }
+.app { max-width: 720px; margin: 60px auto; padding: 0 20px; }
+.card { background: #fff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 28px; box-shadow: 0 10px 40px rgba(0,0,0,0.06); }
+.card + .card { margin-top: 16px; }
+h1 { font-size: 26px; margin-bottom: 8px; }
+h2 { font-size: 30px; }
+h3 { font-size: 22px; }
+.muted { color: #6b7280; margin-bottom: 16px; }
+label { display: block; margin: 12px 0 6px; font-weight: 600; color: #374151; }
+input { width: 100%; padding: 10px 12px; border-radius: 10px; border: 1px solid #d1d5db; font-size: 15px; }
+button { margin-top: 16px; width: 100%; padding: 12px; border: none; border-radius: 10px; background: linear-gradient(135deg, #4f46e5, #7c3aed); color: white; font-weight: 700; cursor: pointer; box-shadow: 0 8px 24px rgba(79,70,229,0.25); transition: transform 120ms ease, box-shadow 120ms ease; }
+button:hover { transform: translateY(-1px); box-shadow: 0 12px 28px rgba(79,70,229,0.32); }
+button:active { transform: translateY(0); }
+.ghost { width: auto; background: #f3f4f6; color: #111827; box-shadow: none; padding: 10px 14px; }
+.error { color: #b91c1c; margin-top: 12px; }
+.hidden { display: none; }
+.dash-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.balance { display: grid; grid-template-columns: 1.3fr 1fr; gap: 16px; background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+.label { color: #6b7280; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 6px; }
+table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+th, td { padding: 10px 8px; border-bottom: 1px solid #e5e7eb; }
+th { text-align: left; font-size: 13px; color: #6b7280; letter-spacing: 0.03em; }
+.right { text-align: right; }
+.amount-pos { color: #047857; }
+.amount-neg { color: #b91c1c; }

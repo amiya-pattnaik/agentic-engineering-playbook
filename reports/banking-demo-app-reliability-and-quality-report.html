@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Agentic AI Works — Banking Demo App Reliability and Quality</title>
+  <style>
+    body { font-family: -apple-system, system-ui, sans-serif; background: #f8fafc; color: #0f172a; margin: 0; padding: 24px; }
+    .shell { max-width: 960px; margin: 0 auto; background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; box-shadow: 0 10px 40px rgba(0,0,0,0.06); }
+    h1 { margin: 0 0 8px; }
+    .meta { color: #64748b; margin-bottom: 16px; }
+    .artifact { border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 16px; }
+    .agent { color: #475569; font-size: 14px; }
+    pre { background: #0f172a; color: #e2e8f0; padding: 16px; border-radius: 10px; overflow-x: auto; line-height: 1.4; }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <h1>Agentic AI Works — Banking Demo App Reliability and Quality</h1>
+    <div class="meta">
+      <div>Generated: 2025-12-18T22:24:43.383Z</div>
+      <div>Goal: Ensure trustworthy pre-merge checks, solid CI/CD gates, and post-release visibility for customer KPIs.</div>
+      <div>Constraints: Keep CI under 15 minutes; No PII in logs; Feature flag changes before rollout</div>
+      <div>Tech: Node.js, Vanilla JS, CSS, HTML</div>
+    </div>
+    
+      <section class="artifact">
+        <h2>Automated Test Results</h2>
+        <p class="agent">Agent: TestRunner</p>
+        <pre>Status: passed (Tests passed)
+Counts: expected=?, skipped=?, failures=?</pre>
+      </section>
+
+      <section class="artifact">
+        <h2>Metrics Health</h2>
+        <p class="agent">Agent: Metrics</p>
+        <pre>[Mocked Metrics] Banking Demo App Reliability and Quality
+At-risk:
+- Unit coverage %: 78 (target 85) — needs attention
+- Component coverage %: 62 (target 80) — needs attention
+- Static analysis findings: 5 (target 2) — needs attention
+- Security findings: 2 (target 0) — needs attention
+- Regression pass rate %: 92 (target 95) — needs attention
+- p95 latency ms: 420 (target 300) — needs attention
+- p99 latency ms: 870 (target 800) — needs attention
+- Error budget % remaining: 65 (target 80) — needs attention
+- Defect leakage: 3 (target 1) — needs attention
+- MTTR minutes: 35 (target 30) — needs attention
+- Customer error rate %: 0.8 (target 0.5) — needs attention
+- Rollbacks: 1 (target 0) — needs attention
+- SLO compliance %: 92 (target 95) — needs attention
+- Runbook completeness %: 80 (target 90) — needs attention
+Actions:
+- Action: Unit coverage % — add targeted fix/automation.
+- Action: Component coverage % — add targeted fix/automation.
+- Action: Static analysis findings — add targeted fix/automation.
+- Action: Security findings — add targeted fix/automation.
+- Action: Regression pass rate % — add targeted fix/automation.
+- Action: p95 latency ms — add targeted fix/automation.
+- Action: p99 latency ms — add targeted fix/automation.
+- Action: Error budget % remaining — add targeted fix/automation.
+- Action: Defect leakage — add targeted fix/automation.
+- Action: MTTR minutes — add targeted fix/automation.
+- Action: Customer error rate % — add targeted fix/automation.
+- Action: Rollbacks — add targeted fix/automation.
+- Action: SLO compliance % — add targeted fix/automation.
+- Action: Runbook completeness % — add targeted fix/automation.
+
+Prompt preview:
+&gt; Scenario: Banking Demo App Reliability and Quality
+&gt; Goal: Ensure trustworthy pre-merge checks, solid CI/CD gates, and post-release visibility for customer KPIs.
+&gt; Metrics status (pre-computed):
+&gt; Unit coverage %: 78 (target 85) — needs attention
+&gt; Component coverage %: 62 (target 80) — needs attention
+&gt; Static analysis findings: 5 (target 2) — needs attention</pre>
+      </section>
+
+      <section class="artifact">
+        <h2>Discovery + Requirements</h2>
+        <p class="agent">Agent: Discovery</p>
+        <pre>[Mocked Discovery] Banking Demo App Reliability and Quality
+Objective: Ensure trustworthy pre-merge checks, solid CI/CD gates, and post-release visibility for customer KPIs.
+- Risk: Keep CI under 15 minutes
+- Risk: No PII in logs
+- Risk: Feature flag changes before rollout
+Plan:
+- Map signals to likely failure points.
+- Propose quick instrumentation for evidence.
+- Define what a good outcome looks like.
+Success metrics: reduced flake %, lead time improvement, alert precision.
+
+Prompt preview:
+&gt; Scenario: Banking Demo App Reliability and Quality
+&gt; Problem: Demo banking web app (login + dashboard) needs higher engineering excellence, CI/CD confidence, and post-release observability.
+&gt; Goal: Ensure trustworthy pre-merge checks, solid CI/CD gates, and post-release visibility for customer KPIs.
+&gt; Signals: Frontend uses vanilla JS and static assets (no framework). | Login and dashboard are unauthenticated in demo; plan for auth hardening. | CI currently only runs lint + unit tests; no perf checks. | Unit coverage 78% (target 85%), component coverage 62%. | Static analysis findings: 5, security findings: 2. | Regression pass rate 92%, quality gate failing (coverage below target). | Perf: p95 420ms, p99 870ms, throughput 130 rps, error budget remaining 65%. | Defect leakage 3, MTTR 35m, MTTD 10m. | Customer error rate 0.8%, rollback count 1, SLO compliance 92%, runbook completeness 80%, onboarding score 7.5. | Playwright tests: ? expected, 0 skipped, failures 0 | Playwright status: passed (Tests passed)
+&gt; Constraints: Keep CI under 15 minutes | No PII in logs | Feature flag changes before rollout</pre>
+      </section>
+
+      <section class="artifact">
+        <h2>Engineering Plan</h2>
+        <p class="agent">Agent: Engineering</p>
+        <pre>[Mocked Engineering] Banking Demo App Reliability and Quality
+Plan:
+- Harden auth flow: add basic auth guard + feature flag for MFA rollout.
+- Add health/readiness probe for the API backing balances/transactions.
+- Add structured logs for login success/failure and dashboard data fetch.
+- Gate deploy with coverage threshold + lint/security checks.
+Checkpoints: green unit suite, integration &lt; 10 min, auth errors observable via logs.
+Rollback: flip flag to disable new auth checks; revert readiness gate if needed.
+
+Prompt preview:
+&gt; Scenario: Banking Demo App Reliability and Quality
+&gt; Problem: Demo banking web app (login + dashboard) needs higher engineering excellence, CI/CD confidence, and post-release observability.
+&gt; Signals: Frontend uses vanilla JS and static assets (no framework). | Login and dashboard are unauthenticated in demo; plan for auth hardening. | CI currently only runs lint + unit tests; no perf checks. | Unit coverage 78% (target 85%), component coverage 62%. | Static analysis findings: 5, security findings: 2. | Regression pass rate 92%, quality gate failing (coverage below target). | Perf: p95 420ms, p99 870ms, throughput 130 rps, error budget remaining 65%. | Defect leakage 3, MTTR 35m, MTTD 10m. | Customer error rate 0.8%, rollback count 1, SLO compliance 92%, runbook completeness 80%, onboarding score 7.5. | Playwright tests: ? expected, 0 skipped, failures 0 | Playwright status: passed (Tests passed)
+&gt; Previous artifacts:</pre>
+      </section>
+
+      <section class="artifact">
+        <h2>Quality + Testing</h2>
+        <p class="agent">Agent: Quality</p>
+        <pre>[Mocked Quality] Banking Demo App Reliability and Quality
+Test matrix:
+- Unit: auth guard allows valid users and rejects invalid creds; logs include reason.
+- Contract: dashboard API returns balances/transactions schema; handles 401/429 gracefully.
+- Integration: simulate slow backend; ensure UI shows loading and recovers without error.
+- Reliability: run login flow 30x; capture flake rate and attach histogram artifact.
+Automation: add CI step to rerun flaky spec N=5 and publish histogram.
+
+Prompt preview:
+&gt; Scenario: Banking Demo App Reliability and Quality
+&gt; Problem: Demo banking web app (login + dashboard) needs higher engineering excellence, CI/CD confidence, and post-release observability.
+&gt; Signals: Frontend uses vanilla JS and static assets (no framework). | Login and dashboard are unauthenticated in demo; plan for auth hardening. | CI currently only runs lint + unit tests; no perf checks. | Unit coverage 78% (target 85%), component coverage 62%. | Static analysis findings: 5, security findings: 2. | Regression pass rate 92%, quality gate failing (coverage below target). | Perf: p95 420ms, p99 870ms, throughput 130 rps, error budget remaining 65%. | Defect leakage 3, MTTR 35m, MTTD 10m. | Customer error rate 0.8%, rollback count 1, SLO compliance 92%, runbook completeness 80%, onboarding score 7.5. | Playwright tests: ? expected, 0 skipped, failures 0 | Playwright status: passed (Tests passed)
+&gt; Constraints: Keep CI under 15 minutes | No PII in logs | Feature flag changes before rollout</pre>
+      </section>
+
+      <section class="artifact">
+        <h2>Platform + Delivery</h2>
+        <p class="agent">Agent: Platform</p>
+        <pre>[Mocked Platform] Banking Demo App Reliability and Quality
+Guardrails:
+- Add CI job `readiness-check` to block integration until service reports healthy.
+- Publish retry/latency metrics to dashboard; alert when p95 &gt; budget.
+- Add canary deploy step with 5% traffic + auto rollback on error spike.
+- Bake slowness simulation into nightly chaos run.
+Owner: platform + service team; review weekly until flake rate &lt; 1%.
+
+Prompt preview:
+&gt; Scenario: Banking Demo App Reliability and Quality
+&gt; Goal: Ensure trustworthy pre-merge checks, solid CI/CD gates, and post-release visibility for customer KPIs.
+&gt; Signals: Frontend uses vanilla JS and static assets (no framework). | Login and dashboard are unauthenticated in demo; plan for auth hardening. | CI currently only runs lint + unit tests; no perf checks. | Unit coverage 78% (target 85%), component coverage 62%. | Static analysis findings: 5, security findings: 2. | Regression pass rate 92%, quality gate failing (coverage below target). | Perf: p95 420ms, p99 870ms, throughput 130 rps, error budget remaining 65%. | Defect leakage 3, MTTR 35m, MTTD 10m. | Customer error rate 0.8%, rollback count 1, SLO compliance 92%, runbook completeness 80%, onboarding score 7.5. | Playwright tests: ? expected, 0 skipped, failures 0 | Playwright status: passed (Tests passed)
+&gt; Previous artifacts:</pre>
+      </section>
+
+      <section class="artifact">
+        <h2>Test Scenarios (BDD)</h2>
+        <p class="agent">Agent: TestDesigner</p>
+        <pre>[Mocked BDD] Banking Demo App Reliability and Quality
+API scenarios:
+Scenario: Fetch account data with auth
+  Given an authenticated user token
+  When I GET /api/account
+  Then I receive balance, credit, and transactions with 200
+Scenario: Reject unauthorized account fetch
+  Given no auth token
+  When I GET /api/account
+  Then I receive 401 with an error message
+
+UI scenarios:
+Scenario: Login success and dashboard render
+  Given I am on the login page
+  When I sign in with valid credentials
+  Then I see balance and recent transactions
+Scenario: Handle slow backend gracefully
+  Given the backend responds slowly
+  When I navigate to the dashboard
+  Then I see a loader and the UI recovers without errors
+
+Prompt preview:
+&gt; Scenario: Banking Demo App Reliability and Quality
+&gt; Signals: Frontend uses vanilla JS and static assets (no framework). | Login and dashboard are unauthenticated in demo; plan for auth hardening. | CI currently only runs lint + unit tests; no perf checks. | Unit coverage 78% (target 85%), component coverage 62%. | Static analysis findings: 5, security findings: 2. | Regression pass rate 92%, quality gate failing (coverage below target). | Perf: p95 420ms, p99 870ms, throughput 130 rps, error budget remaining 65%. | Defect leakage 3, MTTR 35m, MTTD 10m. | Customer error rate 0.8%, rollback count 1, SLO compliance 92%, runbook completeness 80%, onboarding score 7.5. | Playwright tests: ? expected, 0 skipped, failures 0 | Playwright status: passed (Tests passed)
+&gt; Previous artifacts:
+&gt; - TestRunner: Automated Test Results
+&gt; - Metrics: Metrics Health
+&gt; - Discovery: Discovery + Requirements</pre>
+      </section>
+
+      <section class="artifact">
+        <h2>Executive Summary</h2>
+        <p class="agent">Agent: Storyteller</p>
+        <pre>[Mocked Summary] Banking Demo App Reliability and Quality
+Summary:
+- TestRunner: Automated Test Results
+- Metrics: Metrics Health
+- Discovery: Discovery + Requirements
+- Engineering: Engineering Plan
+- Quality: Quality + Testing
+- Platform: Platform + Delivery
+- TestDesigner: Test Scenarios (BDD)
+Demo (3 minutes):
+- Show repo signals -&gt; Discovery output.
+- Walk through Engineering plan with checkpoints.
+- Run Quality matrix to show coverage delta.
+- Show Platform guardrail diffs in CI pipeline.
+
+Prompt preview:
+&gt; Scenario: Banking Demo App Reliability and Quality
+&gt; Goal: Ensure trustworthy pre-merge checks, solid CI/CD gates, and post-release visibility for customer KPIs.
+&gt; Artifacts:
+&gt; - Automated Test Results</pre>
+      </section>
+  </div>
+</body>
+</html>

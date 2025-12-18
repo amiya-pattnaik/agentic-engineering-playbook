@@ -1,0 +1,19 @@
+{
+  "title": "Banking Demo App Reliability and Quality",
+  "problem": "Demo banking web app (login + dashboard) needs higher engineering excellence, CI/CD confidence, and post-release observability.",
+  "goal": "Ensure trustworthy pre-merge checks, solid CI/CD gates, and post-release visibility for customer KPIs.",
+  "techStack": ["Node.js", "Vanilla JS", "CSS", "HTML"],
+  "constraints": [
+    "Keep CI under 15 minutes",
+    "No PII in logs",
+    "Feature flag changes before rollout"
+  ],
+  "inputs": {
+    "repoSignals": [
+      "Frontend uses vanilla JS and static assets (no framework).",
+      "Login and dashboard are unauthenticated in demo; plan for auth hardening.",
+      "CI currently only runs lint + unit tests; no perf checks."
+    ]
+  },
+  "notes": "Use metrics from data/metrics.json to enrich signals."
+}

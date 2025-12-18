@@ -1,0 +1,20 @@
+{
+  "github": {
+    "repo": "org/repo-name",
+    "pr": 123
+  },
+  "sonar": {
+    "projectKey": "org:project",
+    "url": "https://sonarcloud.io/project/overview?id=org_project"
+  },
+  "fortify": {
+    "project": "banking-demo"
+  },
+  "cicd": {
+    "jobUrl": "https://ci.example.com/job/banking-demo/lastBuild"
+  },
+  "customSignals": [
+    "Example: CI coverage 78% vs target 85%",
+    "Example: Fortify high-severity issues = 2"
+  ]
+}

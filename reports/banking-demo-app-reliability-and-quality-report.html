@@ -17,7 +17,7 @@
   <div class="shell">
     <h1>Agentic AI Works — Banking Demo App Reliability and Quality</h1>
     <div class="meta">
-      <div>Generated: 2025-12-18T22:24:43.383Z</div>
+      <div>Generated: 2026-02-02T02:56:38.871Z</div>
       <div>Goal: Ensure trustworthy pre-merge checks, solid CI/CD gates, and post-release visibility for customer KPIs.</div>
       <div>Constraints: Keep CI under 15 minutes; No PII in logs; Feature flag changes before rollout</div>
       <div>Tech: Node.js, Vanilla JS, CSS, HTML</div>
@@ -26,7 +26,7 @@
       <section class="artifact">
         <h2>Automated Test Results</h2>
         <p class="agent">Agent: TestRunner</p>
-        <pre>Status: passed (Tests passed)
+        <pre>Status: failed (Tests failed)
 Counts: expected=?, skipped=?, failures=?</pre>
       </section>
 
@@ -92,7 +92,7 @@ Prompt preview:
 &gt; Scenario: Banking Demo App Reliability and Quality
 &gt; Problem: Demo banking web app (login + dashboard) needs higher engineering excellence, CI/CD confidence, and post-release observability.
 &gt; Goal: Ensure trustworthy pre-merge checks, solid CI/CD gates, and post-release visibility for customer KPIs.
-&gt; Signals: Frontend uses vanilla JS and static assets (no framework). | Login and dashboard are unauthenticated in demo; plan for auth hardening. | CI currently only runs lint + unit tests; no perf checks. | Unit coverage 78% (target 85%), component coverage 62%. | Static analysis findings: 5, security findings: 2. | Regression pass rate 92%, quality gate failing (coverage below target). | Perf: p95 420ms, p99 870ms, throughput 130 rps, error budget remaining 65%. | Defect leakage 3, MTTR 35m, MTTD 10m. | Customer error rate 0.8%, rollback count 1, SLO compliance 92%, runbook completeness 80%, onboarding score 7.5. | Playwright tests: ? expected, 0 skipped, failures 0 | Playwright status: passed (Tests passed)
+&gt; Signals: Frontend uses vanilla JS and static assets (no framework). | Login and dashboard are unauthenticated in demo; plan for auth hardening. | CI currently only runs lint + unit tests; no perf checks. | Unit coverage 78% (target 85%), component coverage 62%. | Static analysis findings: 5, security findings: 2. | Regression pass rate 92%, quality gate failing (coverage below target). | Perf: p95 420ms, p99 870ms, throughput 130 rps, error budget remaining 65%. | Defect leakage 3, MTTR 35m, MTTD 10m. | Customer error rate 0.8%, rollback count 1, SLO compliance 92%, runbook completeness 80%, onboarding score 7.5. | Playwright tests: ? expected, 0 skipped, failures 0 | Playwright status: failed (Tests failed)
 &gt; Constraints: Keep CI under 15 minutes | No PII in logs | Feature flag changes before rollout</pre>
       </section>
 
@@ -111,7 +111,7 @@ Rollback: flip flag to disable new auth checks; revert readiness gate if needed.
 Prompt preview:
 &gt; Scenario: Banking Demo App Reliability and Quality
 &gt; Problem: Demo banking web app (login + dashboard) needs higher engineering excellence, CI/CD confidence, and post-release observability.
-&gt; Signals: Frontend uses vanilla JS and static assets (no framework). | Login and dashboard are unauthenticated in demo; plan for auth hardening. | CI currently only runs lint + unit tests; no perf checks. | Unit coverage 78% (target 85%), component coverage 62%. | Static analysis findings: 5, security findings: 2. | Regression pass rate 92%, quality gate failing (coverage below target). | Perf: p95 420ms, p99 870ms, throughput 130 rps, error budget remaining 65%. | Defect leakage 3, MTTR 35m, MTTD 10m. | Customer error rate 0.8%, rollback count 1, SLO compliance 92%, runbook completeness 80%, onboarding score 7.5. | Playwright tests: ? expected, 0 skipped, failures 0 | Playwright status: passed (Tests passed)
+&gt; Signals: Frontend uses vanilla JS and static assets (no framework). | Login and dashboard are unauthenticated in demo; plan for auth hardening. | CI currently only runs lint + unit tests; no perf checks. | Unit coverage 78% (target 85%), component coverage 62%. | Static analysis findings: 5, security findings: 2. | Regression pass rate 92%, quality gate failing (coverage below target). | Perf: p95 420ms, p99 870ms, throughput 130 rps, error budget remaining 65%. | Defect leakage 3, MTTR 35m, MTTD 10m. | Customer error rate 0.8%, rollback count 1, SLO compliance 92%, runbook completeness 80%, onboarding score 7.5. | Playwright tests: ? expected, 0 skipped, failures 0 | Playwright status: failed (Tests failed)
 &gt; Previous artifacts:</pre>
       </section>
 
@@ -129,7 +129,7 @@ Automation: add CI step to rerun flaky spec N=5 and publish histogram.
 Prompt preview:
 &gt; Scenario: Banking Demo App Reliability and Quality
 &gt; Problem: Demo banking web app (login + dashboard) needs higher engineering excellence, CI/CD confidence, and post-release observability.
-&gt; Signals: Frontend uses vanilla JS and static assets (no framework). | Login and dashboard are unauthenticated in demo; plan for auth hardening. | CI currently only runs lint + unit tests; no perf checks. | Unit coverage 78% (target 85%), component coverage 62%. | Static analysis findings: 5, security findings: 2. | Regression pass rate 92%, quality gate failing (coverage below target). | Perf: p95 420ms, p99 870ms, throughput 130 rps, error budget remaining 65%. | Defect leakage 3, MTTR 35m, MTTD 10m. | Customer error rate 0.8%, rollback count 1, SLO compliance 92%, runbook completeness 80%, onboarding score 7.5. | Playwright tests: ? expected, 0 skipped, failures 0 | Playwright status: passed (Tests passed)
+&gt; Signals: Frontend uses vanilla JS and static assets (no framework). | Login and dashboard are unauthenticated in demo; plan for auth hardening. | CI currently only runs lint + unit tests; no perf checks. | Unit coverage 78% (target 85%), component coverage 62%. | Static analysis findings: 5, security findings: 2. | Regression pass rate 92%, quality gate failing (coverage below target). | Perf: p95 420ms, p99 870ms, throughput 130 rps, error budget remaining 65%. | Defect leakage 3, MTTR 35m, MTTD 10m. | Customer error rate 0.8%, rollback count 1, SLO compliance 92%, runbook completeness 80%, onboarding score 7.5. | Playwright tests: ? expected, 0 skipped, failures 0 | Playwright status: failed (Tests failed)
 &gt; Constraints: Keep CI under 15 minutes | No PII in logs | Feature flag changes before rollout</pre>
       </section>
 
@@ -147,7 +147,7 @@ Owner: platform + service team; review weekly until flake rate &lt; 1%.
 Prompt preview:
 &gt; Scenario: Banking Demo App Reliability and Quality
 &gt; Goal: Ensure trustworthy pre-merge checks, solid CI/CD gates, and post-release visibility for customer KPIs.
-&gt; Signals: Frontend uses vanilla JS and static assets (no framework). | Login and dashboard are unauthenticated in demo; plan for auth hardening. | CI currently only runs lint + unit tests; no perf checks. | Unit coverage 78% (target 85%), component coverage 62%. | Static analysis findings: 5, security findings: 2. | Regression pass rate 92%, quality gate failing (coverage below target). | Perf: p95 420ms, p99 870ms, throughput 130 rps, error budget remaining 65%. | Defect leakage 3, MTTR 35m, MTTD 10m. | Customer error rate 0.8%, rollback count 1, SLO compliance 92%, runbook completeness 80%, onboarding score 7.5. | Playwright tests: ? expected, 0 skipped, failures 0 | Playwright status: passed (Tests passed)
+&gt; Signals: Frontend uses vanilla JS and static assets (no framework). | Login and dashboard are unauthenticated in demo; plan for auth hardening. | CI currently only runs lint + unit tests; no perf checks. | Unit coverage 78% (target 85%), component coverage 62%. | Static analysis findings: 5, security findings: 2. | Regression pass rate 92%, quality gate failing (coverage below target). | Perf: p95 420ms, p99 870ms, throughput 130 rps, error budget remaining 65%. | Defect leakage 3, MTTR 35m, MTTD 10m. | Customer error rate 0.8%, rollback count 1, SLO compliance 92%, runbook completeness 80%, onboarding score 7.5. | Playwright tests: ? expected, 0 skipped, failures 0 | Playwright status: failed (Tests failed)
 &gt; Previous artifacts:</pre>
       </section>
 
@@ -177,7 +177,7 @@ Scenario: Handle slow backend gracefully
 
 Prompt preview:
 &gt; Scenario: Banking Demo App Reliability and Quality
-&gt; Signals: Frontend uses vanilla JS and static assets (no framework). | Login and dashboard are unauthenticated in demo; plan for auth hardening. | CI currently only runs lint + unit tests; no perf checks. | Unit coverage 78% (target 85%), component coverage 62%. | Static analysis findings: 5, security findings: 2. | Regression pass rate 92%, quality gate failing (coverage below target). | Perf: p95 420ms, p99 870ms, throughput 130 rps, error budget remaining 65%. | Defect leakage 3, MTTR 35m, MTTD 10m. | Customer error rate 0.8%, rollback count 1, SLO compliance 92%, runbook completeness 80%, onboarding score 7.5. | Playwright tests: ? expected, 0 skipped, failures 0 | Playwright status: passed (Tests passed)
+&gt; Signals: Frontend uses vanilla JS and static assets (no framework). | Login and dashboard are unauthenticated in demo; plan for auth hardening. | CI currently only runs lint + unit tests; no perf checks. | Unit coverage 78% (target 85%), component coverage 62%. | Static analysis findings: 5, security findings: 2. | Regression pass rate 92%, quality gate failing (coverage below target). | Perf: p95 420ms, p99 870ms, throughput 130 rps, error budget remaining 65%. | Defect leakage 3, MTTR 35m, MTTD 10m. | Customer error rate 0.8%, rollback count 1, SLO compliance 92%, runbook completeness 80%, onboarding score 7.5. | Playwright tests: ? expected, 0 skipped, failures 0 | Playwright status: failed (Tests failed)
 &gt; Previous artifacts:
 &gt; - TestRunner: Automated Test Results
 &gt; - Metrics: Metrics Health

@@ -2,6 +2,10 @@
 
 Small, runnable demo that shows an agentic AI workflow for engineering/QA/platform around a simple banking web app. It runs locally with a mocked model or can call OpenAI if you drop a key into `config/model.json`.
 
+This repo now has two orchestration paths:
+- `manual` — the original orchestrator in `src/orchestrator.js`
+- `langgraph v2` — a parallel graph-based orchestrator in `src/langgraph-orchestrator.js`
+
 ## Concept Primer: What Is Agentic AI?
 Agentic AI is a multi-step system where specialized agents plan, reason, and act in sequence using shared context and tools. Instead of one prompt producing one answer, the workflow decomposes a goal into coordinated steps.
 
@@ -53,7 +57,7 @@ Rule of thumb:
 Scenario + Metrics + Signals
             |
             v
-      Orchestrator (run.js)
+   Orchestrator (manual or LangGraph)
             |
             v
  [Metrics] -> [Discovery] -> [Engineering] -> [Quality]
@@ -88,6 +92,10 @@ node src/run.js scenarios/banking-app.json --metrics data/metrics.json
 node src/run.js scenarios/banking-app.json --metrics data/metrics.json --html
 node src/run.js scenarios/banking-app.json --metrics data/metrics.json --signals config/signals.json --html --run-tests
 npm run demo:tests
+
+# LangGraph v2 path
+npm run demo:langgraph
+npm run demo:tests:langgraph
 ```
 
 Use OpenAI instead of mock (optional):
@@ -112,6 +120,8 @@ Other LLM providers:
 ## Files
 - `src/run.js` — CLI entrypoint (`--metrics`, `--html`, `--run-tests`).
 - `src/orchestrator.js` — chains agents and renders reports.
+- `src/run-langgraph.js` — LangGraph v2 CLI entrypoint.
+- `src/langgraph-orchestrator.js` — LangGraph-based state graph that runs the same agent chain.
 - `src/agents.js` — agent definitions and prompts.
 - `src/models.js` — mock and optional OpenAI model clients.
 - `src/tools.js` — metrics/signal loaders.
@@ -127,6 +137,7 @@ Other LLM providers:
 - Add tools so agents can read repo files, CI logs, or quality/security APIs.
 - Add additional agents for release governance, cost, or reliability.
 - Swap model providers in `src/models.js` while keeping orchestrator logic intact.
+- Compare orchestration styles directly by running `manual` vs `langgraph v2` on the same scenario and report inputs.
 
 ## Failure Modes and Mitigations
 - Prompt drift: keep scenario-based regression runs.

@@ -6,13 +6,20 @@
   "scripts": {
     "demo": "node src/run.js scenarios/banking-app.json --metrics data/metrics.json",
     "demo:tests": "node src/run.js scenarios/banking-app.json --metrics data/metrics.json --html --run-tests",
+    "demo:langgraph": "node src/run-langgraph.js scenarios/banking-app.json --metrics data/metrics.json",
+    "demo:tests:langgraph": "node src/run-langgraph.js scenarios/banking-app.json --metrics data/metrics.json --html --run-tests",
     "list": "node src/run.js --list",
-    "web": "node src/web-server.js"
+    "list:langgraph": "node src/run-langgraph.js --list",
+    "web": "node src/web-server.js",
+    "lint": "node --check src/run.js src/run-langgraph.js src/orchestrator.js src/langgraph-orchestrator.js src/agents.js src/models.js src/tools.js src/utils.js src/web-server.js src/test-runner.js"
   },
   "engines": {
     "node": ">=18"
   },
   "devDependencies": {
     "@playwright/test": "^1.41.2"
+  },
+  "dependencies": {
+    "@langchain/langgraph": "^1.2.8"
   }
 }

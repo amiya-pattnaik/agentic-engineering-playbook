@@ -1,0 +1,4 @@
+node_modules/
+reports/*.html
+reports/*.md
+test-results/

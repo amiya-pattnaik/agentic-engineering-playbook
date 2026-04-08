@@ -45,6 +45,17 @@ Rule of thumb:
 - Each step receives prior outputs, which improves continuity and traceability.
 - Output artifacts are structured for practical use (reports + optional generated tests).
 
+## When to Use This Pattern
+Use it when:
+- You need multi-step planning across specialized roles.
+- You want an auditable workflow that carries context forward between steps.
+- You need tool execution or test execution as part of the flow.
+
+Avoid or augment it when:
+- You only need a fast single response from prompt + context.
+- You need document-grounded Q&A more than orchestration.
+- The workflow cost/complexity is not justified by the task.
+
 ### How the agentic flow works (no ML background needed)
 - A **scenario** is JSON describing a problem, signals, tech, and constraints.
 - Agents run in order: Metrics -> Discovery -> Engineering -> Quality -> Platform -> TestDesigner -> Summary.
@@ -98,6 +109,10 @@ npm run demo:langgraph
 npm run demo:tests:langgraph
 ```
 
+Manual vs framework path:
+- `manual`: original orchestrator with explicit step sequencing and report rendering.
+- `langgraph v2`: state-graph orchestration using LangGraph while preserving the same scenario/report contract.
+
 Use OpenAI instead of mock (optional):
 ```bash
 cp config/model.example.json config/model.json
@@ -138,6 +153,11 @@ Other LLM providers:
 - Add additional agents for release governance, cost, or reliability.
 - Swap model providers in `src/models.js` while keeping orchestrator logic intact.
 - Compare orchestration styles directly by running `manual` vs `langgraph v2` on the same scenario and report inputs.
+
+## Compare Manual vs LangGraph v2
+- `manual` is the best path to explain the mechanics clearly: state handoff, agent ordering, report assembly, and optional test generation.
+- `langgraph v2` is the better path to show framework adoption: node-based orchestration, state graphs, and a more standard agent runtime model.
+- Keeping both paths in one repo gives you a stronger interview story: fundamentals first, framework second.
 
 ## Failure Modes and Mitigations
 - Prompt drift: keep scenario-based regression runs.
